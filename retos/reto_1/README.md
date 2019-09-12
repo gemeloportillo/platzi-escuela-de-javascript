@@ -4,7 +4,7 @@ Este plugin permite dar sugerencias de autocompletado cuando escribimos en nuest
 
 Ejemplo de uso en nuestra carpeta:
 
-![Screenshot](./img/zsh-suggestions.png)
+![Screenshot](../img/zsh-suggestions.png)
 
 
 
