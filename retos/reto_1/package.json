@@ -1,0 +1,20 @@
+{
+  "name": "reto_1",
+  "version": "1.0.0",
+  "description": "1. Instala, configura y haz una demostración del plugin ZSH Autosugestions que puedes encontrar aquí: https://github.com/zsh-users/zsh-autosuggestions. Comparte con tus compañeros de Escuela JS la importancia de este plugin y tus propios descubrimientos relacionados.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
+    "eslint": "^6.4.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.14.3"
+  }
+}
