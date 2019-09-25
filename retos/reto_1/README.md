@@ -27,7 +27,7 @@ Instalarlo de manera global te permite usarlo en cualquiera de tus proyectos. De
 > Nota: si instalas ESLint globalmente, necesitas correr en la línea de comando de tu proyecto:
 
 ``
-eslint --init
+npx eslint --init
 ``
 
 Esto te permite acceder a una configuración dinámica de ESLint en un proyecto base ([ver instalacion ESLint](https://github.com/gemeloportillo/platzi-escuela-de-javascript/blob/master/retos/Instalaci%C3%B3n-ESLint.txt))
