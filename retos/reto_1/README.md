@@ -67,7 +67,7 @@ Si necesitas excluir carpetas / archivos de tus reglas de ESLint, puedes agregar
 
 ### Fuente
 
-[fuente](https://www.robinwieruch.de/prettier-eslint)
+[fuente: https://www.robinwieruch.de/prettier-eslint ](https://www.robinwieruch.de/prettier-eslint)
 
 ### Cómo contribuir
 Puedes crear un pull request al proyecto
