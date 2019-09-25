@@ -32,3 +32,18 @@ git pull (traer los cambios de mi repositorio remoto a mi local)
 git remote add origin git@github.com:yourusername/yourrepository.git  (agrega un servidor remote al repositorio)
 git push --set-upstream origin master
 git push
+
+
+Configuraciones para cuando tienes bloqueado el puerto 22 y no puedes usar la conexion de github:
+1. ir a la carpeta /.ssh
+2. touch config
+3. nano config
+
+host github
+hostname ssh.github.com
+Port 443
+User git
+PreferredAuthentications publickey 
+IdentitiesOnly yes
+IdentifyFile ~/.ssh/id_rsa (o el path de tu llave ssh)
+
