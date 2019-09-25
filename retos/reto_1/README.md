@@ -65,6 +65,9 @@ A partir de ahora no debería haber nada en tu camino para mejorar el estilo y l
 
 Si necesitas excluir carpetas / archivos de tus reglas de ESLint, puedes agregarlos en archivo .eslintignore (por ejemplo, node_modules / *)
 
+### Fuente
+
+[fuente](https://www.robinwieruch.de/prettier-eslint)
 
 ### Cómo contribuir
 Puedes crear un pull request al proyecto
