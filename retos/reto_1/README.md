@@ -29,7 +29,8 @@ Instalarlo de manera global te permite usarlo en cualquiera de tus proyectos. De
 ``
 npx eslint --init
 ``
-NOTA: Si tienes problemas para la instalación de ESLint con una configuración inicial y marca algun error de creación del archivo JSON puedes usar el siguiente comando para crear tu package.json
+
+> NOTA: Si tienes problemas para la instalación de ESLint con una configuración inicial y marca algun error de creación del archivo JSON puedes usar el siguiente comando para crear tu package.json
 
 ``
 npm init --yes
