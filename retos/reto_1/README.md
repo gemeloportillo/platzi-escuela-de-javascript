@@ -20,7 +20,8 @@ npm install -g prettier eslint
 
 Instalarlo de manera global te permite usarlo en cualquiera de tus proyectos. De esta manera no tienes que preocuparte de instalarlos para cada uno. Sin embargo si trabajas en un proyecto como parte de un equipo, tiene sentido instalar tambien los dos paquetes a tu proyecto.
 
-Nota: si instalas ESLint globalmente, necesitas correr en la linea de comando de tu proyecto: 
+Nota: si instalas ESLint globalmente, necesitas correr en la linea de comando de tu proyecto:
+
 ``
 eslint --init
 ``
@@ -29,10 +30,15 @@ Esto te permite acceder a una configuración dinámica de ESLint en un proyecto 
 2. Instala las extensiones/pluggins para Prettier y ESLint en tu editor/IDE. En este caso VSCode.
 
 3. Instala dos o mas paquetes que estan a cargo de combinar Prettier y ESLint:
+
+``
     npm install --save-dev eslint-config-prettier eslint-plugin-prettier
+``
 Mientras que el primero desactiva todas las reglas de ESLint que podrían entrar en conflicto con Prettier, el segundo integra las reglas de Prettier en las reglas de ESLint.
 
 Por último, pero no menos importante, establezca las reglas de Prettier en su configuración de ESLint. Por lo tanto, cree un archivo .eslintrc.json en el directorio raíz de su proyecto y dele la siguiente configuración:
+
+`
     {
       "extends": ["prettier"],
       "plugins": ["prettier"],
@@ -40,6 +46,7 @@ Por último, pero no menos importante, establezca las reglas de Prettier en su c
         "prettier/prettier": ["error"]
       },
     }
+`
 
 Eso es todo, Estas listo para usar Prettier y ESLint en tu proyecto sin preocuparte acerca de cualquier conflicto. ESLint sabe de todas las reglas de Prettier al integrar todas las reglas que se aplican y eliminar todas las reglas que podrían entrar en conflicto con ellas.
 No debería a partir de ahora haber nada en su camino para mejorar el estilo y la estructura del código
