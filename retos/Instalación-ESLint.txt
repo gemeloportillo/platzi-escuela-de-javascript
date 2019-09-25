@@ -1,3 +1,8 @@
+Prettier se encarga de su formato de código, ESLint se encarga de su estilo de código. El primero hace todo automáticamente por usted. Si ha configurado Prettier, puede configurarlo para formatear su archivo al guardarlo. De esa manera, nunca más tendrá que preocuparse por el formato de su código. Como Prettier es muy obstinado, solo puede hacer configuraciones menores.
+
+ESLint no está destinado a realizar correcciones de estilo de código automáticamente. En cambio, ESLint le advierte sobre codigo que "huele o apesta" (code smell). Por ejemplo, puede suceder que haya importado algo de otro archivo, pero no hace uso de el imported en su archivo actual. ESLint le advertirá sobre una importación no utilizada.
+A diferencia de Prettier, EsLint es altamente configurable, porque no viene con reglas pre-configuradas. Una vez instalado EsLint tienes que configurarlo tu mismo o usar una de las configuraciones pre-configuradas de EsLint (ejemplo Airbnb Style Guide).
+
 Instalacion de ESLint globalmente en el sistema
 
 1. Ejecutar en la terminal el comando:
