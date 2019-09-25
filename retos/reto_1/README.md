@@ -21,7 +21,7 @@ npm install -g prettier eslint
 Instalarlo de manera global te permite usarlo en cualquiera de tus proyectos. De esta manera no tienes que preocuparte de instalarlos para cada uno. Sin embargo si trabajas en un proyecto como parte de un equipo, tiene sentido instalar tambien los dos paquetes a tu proyecto.
 
 Nota: si instalas ESLint globalmente, necesitas correr en la linea de comando de tu proyecto: 
-console.log('eslint --init')
+    eslint --init
 Esto te permite acceder a una configuración dinámica de ESLint en un proyecto base ([ver instalacion ESLint](https://github.com/gemeloportillo/platzi-escuela-de-javascript/blob/master/retos/Instalaci%C3%B3n-ESLint.txt))
 
 2. Instala las extensiones/pluggins para Prettier y ESLint en tu editor/IDE. En este caso VSCode.
