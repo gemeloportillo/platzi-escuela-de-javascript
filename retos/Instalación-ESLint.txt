@@ -1,0 +1,13 @@
+Instalacion de ESLint globalmente en el sistema
+
+1. Ejecutar en la terminal el comando:
+npm install -g eslint
+
+2. Inicializar la configuración de ESLint en nuestro proyecto
+npx eslint --init
+
+
+ 
+
+
+

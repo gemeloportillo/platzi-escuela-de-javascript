@@ -1,0 +1,34 @@
+Git
+
+1. Checar version
+git --version
+
+2. Configurar git
+git config user.name "Mi nombre"
+git config user.email "myemail@example.com"
+
+3. Iniciar git
+git init
+
+
+comandos
+git status
+git add
+git commit -m "First Commit"
+git log  (salir con tecla q)
+git checkout -- <file>
+git reset --soft
+git reset --hard  (regresa a un status del git log)
+git branch (mostrar las ramas)
+git checkout -b <nombre rama> (crear rama)
+git checkout <nombre rama> (moverse entre rama)
+git rebase develop (la rama de la que queremos traer los commits <develop>)
+git add . (aplica todos los cambios que esten)
+git commit -am "Nota del commmit"  (add y commit)
+git clone <ruta del github 'clone with ssh'>
+code .  (abre visualstudio con nuestro proyecto)
+git push (enviar codigo hacia mi repositorio remoto)
+git pull (traer los cambios de mi repositorio remoto a mi local)
+git remote add origin git@github.com:yourusername/yourrepository.git  (agrega un servidor remote al repositorio)
+git push --set-upstream origin master
+git push

@@ -1,0 +1,5 @@
+Errores que me salieron:
+
+1. ERR! can not read property 'match' of undefined - react-facebook-login npm package installation
+
+https://stackoverflow.com/questions/55479922/err-can-not-read-property-match-of-undefined-react-facebook-login-npm-packa

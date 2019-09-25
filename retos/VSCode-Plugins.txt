@@ -1,0 +1,7 @@
+VSCode plugins
+
+1. git Blame (que persona hizo que linea de código)
+2. ESLint (identifica errores o patrones problematicos, no los corrige)
+3. Color Highlight ()
+4. SASS
+

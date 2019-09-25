@@ -1,0 +1,14 @@
+OJO:
+Al instalar node.js en windows no basta con descargar el programa e instalarlo desde el ejecutable, la mejor opción es desde la terminal de Bash, ya que al ejecutar sobre hyper no funciona el comando: node -v, solo el node.exe -v
+  
+Para instalar desde Bash.
+Hola usando Ubuntu 18 escribe en terminal:
+1. curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+2. sudo apt-get install -y nodejs
+3. node -v
+
+Listo, asunto arreglado.
+
+Comando para salir de node
+.exit  (ctrl+d)
+(ctrl+c) salir de npm
