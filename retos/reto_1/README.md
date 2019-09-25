@@ -10,7 +10,7 @@ Ejemplo de uso en nuestra carpeta:
 # Reto Uno B. Instalar el plugin Prettier
 2. Instala, configura y has una demostración del plugin Prettier en tu editor de código.
 
-**¿Cómo combinar Eslint y Prettier?**
+## **¿Cómo combinar Eslint y Prettier?**
 
 Prettier se encarga de tu formato de código, ESLint se encarga de tu estilo de código. El primero hace todo automáticamente por ti. Si has configurado Prettier, puedes configurarlo para formatear tu archivo al guardarlo. De esa manera, nunca más tendrás que preocuparte por el formato de tu código. Como Prettier es muy obstinado, solo puede hacer configuraciones menores.
 
