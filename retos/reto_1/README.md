@@ -38,7 +38,7 @@ Esto te permite acceder a una configuración dinámica de ESLint en un proyecto 
 
 Mientras que el primero desactiva todas las reglas de ESLint que podrían entrar en conflicto con Prettier, el segundo integra las reglas de Prettier en las reglas de ESLint.
 
-Por último, pero no menos importante, establezca las reglas de Prettier en su configuración de ESLint. Por lo tanto, cree un archivo .eslintrc.json en el directorio raíz de su proyecto y dele la siguiente configuración:
+Por último, pero no menos importante, establece las reglas de Prettier en su configuración de ESLint. Por lo tanto, cree un archivo .eslintrc.json en el directorio raíz de tu proyecto y dale la siguiente configuración:
 
 ```json
     {
@@ -51,6 +51,10 @@ Por último, pero no menos importante, establezca las reglas de Prettier en su c
 ```
 
 
-Eso es todo, Estas listo para usar Prettier y ESLint en tu proyecto sin preocuparte acerca de cualquier conflicto. ESLint sabe de todas las reglas de Prettier al integrar todas las reglas que se aplican y eliminar todas las reglas que podrían entrar en conflicto con ellas.
-No debería a partir de ahora haber nada en su camino para mejorar el estilo y la estructura del código
+Eso es todo. Estas listo para usar Prettier y ESLint en tu proyecto sin preocuparte acerca de cualquier conflicto. 
+
+ESLint sabe de todas las reglas de Prettier al integrar todas las reglas que se aplican y eliminar todas las reglas que podrían entrar en conflicto con ellas.
+
+A partir de ahora no debería haber nada en tu camino para mejorar el estilo y la estructura del código.
+
 Si necesitas excluir carpetas / archivos de tus reglas de ESLint, puedes agregarlos en archivo .eslintignore (por ejemplo, node_modules / *)
