@@ -80,7 +80,7 @@ const fetchOrders = () => {
         orders(randomType(), apiOrder.data, table[3],
         orders(randomType(), apiOrder.data, table[3]))
       ])
-        .then((res) => console.log('waiter 4:' + res))
+        .then((res) => console.log('waiter 4 API:' + res))
         .catch((err) => console.error(err));
     }
     waiter4();
