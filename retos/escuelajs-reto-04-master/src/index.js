@@ -26,14 +26,15 @@ const waiter = () => {
     .catch((err) => console.error(err));
 };
 
+// Reto 1. Implementa una función randomTime que regrese un valor entre 1000 y 8000ms (investiga)
 //crear mi funcion randomType
 const randomType = (min = 1000, max = 8000) => {
    return Math.floor(Math.random() * (max-min) + min)
 }
 
+//  Reto 2. Crea una función llamada 'waiter2' que se encarge de recoger los pedidos de las mesas 1 y 3
+//          (usando promesas y randomTime)
 //crea segundo mesero waiter2
-//crear funcion waiter2 que recoge los pedidos de las mesas 1 y 3
-//usando promesas y randomTime
 const waiter2 = () => {
   orders(randomType(), menu.hotdog, table[0])
   .then((res) => {
@@ -44,9 +45,10 @@ const waiter2 = () => {
   .catch((err) => console.error(err));
 }
 
-//crear tercer mesero waiter3
-//recoger el pedido de la mesa 2. Servir los platillos cuando la orden esté completa
-//usar async/await, randomType y manejo de errores
+// Reto 3. Crea una función llamada 'waiter3' que se encargue de recoger el pedido de la mesa 2
+//        Los platillos sólo pueden ser servidos cuando la orden esté completa.
+//(usar async/await, randomType y manejo de errores)
+//crea tercer mesero waiter3
 const waiter3 = async () => {
   Promise.all([
     orders(randomType(), menu.pizza, table[1]),
@@ -57,7 +59,26 @@ const waiter3 = async () => {
     .catch((err) => console.error(err));
 };
 
+// Reto 4. (Opcional) Crea una función llamada 'fetchOrders' que realice un llamado a la API de ordenes
+//         y una llamada 'waiter4' que se encargue de solicitar los 4 pedidos que deban ser entregados
+//         hasta que estén todos listos.
+const fetchOrders = () => {
+
+}
+
+//crear waiter4
+const waiter4 = async () => {
+  Promise.all([
+    orders(randomType(), menu.hamburger, table[3]),
+    orders(randomType(), menu.hotdog, table[3]),
+    orders(randomType(), menu.pizza, table[3],
+    orders(randomType(), menu.hotdog, table[3]))
+  ])
+    .then((res) => console.log(res))
+    .catch((err) => console.error(err));
+}
 
 
 waiter();
-//waiter3 ();
+waiter2();
+waiter3 ();
