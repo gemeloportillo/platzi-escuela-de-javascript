@@ -19,7 +19,7 @@ const menu = {
 //arreglo de mesas
 const table = ['Mesa 1', 'Mesa 2', 'Mesa 3', 'Mesa 4', 'Mesa 5'];
 
-//crear el primer mesero
+//crear el primer mesero waiter
 const waiter = () => {
   orders(6000, menu.hamburger, table[3])
     .then((res) => console.log(res))
@@ -31,7 +31,7 @@ const randomType = (min = 1000, max = 8000) => {
    return Math.floor(Math.random() * (max-min) + min)
 }
 
-//crea segundo mesero
+//crea segundo mesero waiter2
 //crear funcion waiter2 que recoge los pedidos de las mesas 1 y 3
 //usando promesas y randomTime
 const waiter2 = () => {
@@ -44,7 +44,7 @@ const waiter2 = () => {
   .catch((err) => console.error(err));
 }
 
-//crear waiter3
+//crear tercer mesero waiter3
 //recoger el pedido de la mesa 2. Servir los platillos cuando la orden esté completa
 //usar async/await, randomType y manejo de errores
 const waiter3 = async () => {
@@ -58,10 +58,6 @@ const waiter3 = async () => {
 };
 
 
-/* async waiter3 = () => {
-  var people = [1,2,3]
-  var promesas = people.map()
-} */
 
 //waiter();
 waiter3 ();
