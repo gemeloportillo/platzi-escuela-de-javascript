@@ -59,5 +59,5 @@ const waiter3 = async () => {
 
 
 
-//waiter();
+waiter();
 waiter3 ();
