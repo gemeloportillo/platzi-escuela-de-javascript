@@ -102,4 +102,5 @@ const fetchOrders = () => {
 waiter();
 waiter2();
 waiter3 ();
+fetchOrders();
 
