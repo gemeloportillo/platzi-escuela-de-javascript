@@ -22,7 +22,7 @@ const table = ['Mesa 1', 'Mesa 2', 'Mesa 3', 'Mesa 4', 'Mesa 5'];
 //crear el primer mesero waiter
 const waiter = () => {
   orders(6000, menu.hamburger, table[3])
-    .then((res) => console.log(res))
+    .then((res) => console.log('waiter 1:' + res))
     .catch((err) => console.error(err));
 };
 
@@ -41,7 +41,7 @@ const waiter2 = () => {
     console.log(res)
     return orders(randomType(), menu.pizza, table[2])
   })
-  .then((res) => console.log(res))
+  .then((res) => console.log('waiter 2:' + res))
   .catch((err) => console.error(err));
 }
 
@@ -55,30 +55,51 @@ const waiter3 = async () => {
     orders(randomType(), menu.hotdog, table[1]),
     orders(randomType(), menu.hamburger, table[1])
   ])
-    .then((res) => console.log(res))
+    .then((res) => console.log('waiter 3:' + res))
     .catch((err) => console.error(err));
 };
 
 // Reto 4. (Opcional) Crea una función llamada 'fetchOrders' que realice un llamado a la API de ordenes
 //         y una llamada 'waiter4' que se encargue de solicitar los 4 pedidos que deban ser entregados
 //         hasta que estén todos listos.
+
 const fetchOrders = () => {
+  //llamada a la API
+  const API_URL='https://us-central1-escuelajs-api.cloudfunctions.net/orders'
+  const dataUrl = `${API_URL}`
+  const opts = {crossDomain:true}
 
+  const onResponse = function(apiOrder){
+    console.log(arguments)
+    console.log(`Yo soy la orden del API: ${apiOrder.data}`)
+    //crear waiter4
+    const waiter4 = async () => {
+      Promise.all([
+        orders(randomType(), apiOrder.data, table[3]),
+        orders(randomType(), apiOrder.data, table[3]),
+        orders(randomType(), apiOrder.data, table[3],
+        orders(randomType(), apiOrder.data, table[3]))
+      ])
+        .then((res) => console.log('waiter 4:' + res))
+        .catch((err) => console.error(err));
+    }
+    waiter4();
+  }
+
+  $.get(dataUrl, opts, onResponse)
+    .done(function() {
+      alert( "second success" );
+    })
+    .fail(function() {
+      alert( "error" );
+    })
 }
 
-//crear waiter4
-const waiter4 = async () => {
-  Promise.all([
-    orders(randomType(), menu.hamburger, table[3]),
-    orders(randomType(), menu.hotdog, table[3]),
-    orders(randomType(), menu.pizza, table[3],
-    orders(randomType(), menu.hotdog, table[3]))
-  ])
-    .then((res) => console.log(res))
-    .catch((err) => console.error(err));
-}
+
+
 
 
 waiter();
 waiter2();
 waiter3 ();
+
