@@ -1,3 +1,5 @@
+var $ = require('jQuery')
+
 //funcion de orden
 const orders = (time, product, table) => {
   console.log(`### Orden: ${product} para ${table}`);
@@ -83,15 +85,15 @@ const fetchOrders = () => {
         .then((res) => console.log('waiter 4 API:' + res))
         .catch((err) => console.error(err));
     }
-    waiter4();
+    waiter4()
   }
 
   $.get(dataUrl, opts, onResponse)
     .done(function() {
-      alert( "second success" );
+      console.log("Second success")
     })
     .fail(function() {
-      alert( "error" );
+      console.log('error')
     })
 }
 
@@ -99,8 +101,8 @@ const fetchOrders = () => {
 
 
 
-waiter();
-waiter2();
-waiter3 ();
-fetchOrders();
+waiter()
+waiter2()
+waiter3 ()
+fetchOrders()
 
