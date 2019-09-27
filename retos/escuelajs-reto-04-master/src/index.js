@@ -1,4 +1,3 @@
-var $ = require('jQuery')
 
 //funcion de orden
 const orders = (time, product, table) => {
@@ -98,11 +97,7 @@ const fetchOrders = () => {
 }
 
 
-
-
-
 waiter()
-waiter2()
+waiter2() 
 waiter3 ()
-fetchOrders()
 
