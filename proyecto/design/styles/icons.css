@@ -1,0 +1,70 @@
+[class^="icon-"]{
+    display: inline-block;
+    background: url('../assets/images/icons.png') no-repeat;
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+    transform:scale(1);
+    transform-origin: 0 0;
+    zoom:.3;
+}
+
+.icon-brown {
+    background-position: -6px -6px;
+}
+
+.icon-cart {
+    background-position: -79px;
+}
+
+.icon-favorite {
+    background-position: -153px;
+}
+
+.icon-gray {
+    background-position: -228px;
+}
+
+.icon-left {
+    background-position: -302px;
+}
+
+.icon-logo-tiendita {
+    background-position: -375px;
+    width: 200px;
+    zoom: 1;
+}
+
+.icon-logo2-tiendita {
+    background-position: -590px;
+    width: 195px;
+    zoom: 1;
+}
+
+.icon-tiendita {
+    background-position: -1158px -5px;
+    margin: 1.9em 0 .65em 0;
+    width: 180px;
+    zoom: 1;
+    height: 28px;
+}
+
+.icon-pie {
+    background-position: -795px;
+}
+
+.icon-right {
+    background-position: -867px;
+}
+
+.icon-search {
+    background-position: -946px;
+}
+
+.icon-truck {
+    background-position: -1018px;
+}
+
+.icon-user {
+    background-position: -1089px;
+}
