@@ -1,4 +1,4 @@
-# PROYECTO: Platzi E-commerce CASA TEMUCO
+# PROYECTO: Platzi E-commerce TU TIENDITA
 
 ### Aquí encontrarás toda la documentación relacionada con el proyecto.
 
