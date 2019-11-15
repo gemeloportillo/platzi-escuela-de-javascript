@@ -176,7 +176,7 @@ header .logo img {
     width: 100%;
   }
 
-input[type="text"] {
+input[type="text"],input[type="password"] {
   font-weight: 200;
   color: #5c432e;
 }
@@ -408,7 +408,7 @@ p {
 }
 
 
-input[type="text"]:focus {
+input[type="text"]:focus, input[type="password"]:focus  {
   outline-offset: 0;
   outline: 0;
   /* box-shadow: 0 1px 4px #ff7c7c, 0 0 0 5px #ffffffeb; */
@@ -560,6 +560,172 @@ footer .logo {
 
 
 
+/* LOGIN STYLES  */
+/* 
+.login {
+  background: #34352e;
+  background-image: url("../assets/images/bg.png");
+  background-image: url("../assets/images/bg.png"), linear-gradient( #56584c, #34352e); 
+
+
+
+
+} */
+.login {
+  background-repeat:no-repeat;
+  background: linear-gradient( #56584c, #34352e); 
+  background-attachment:fixed;
+}
+.login:before {
+  -webkit-animation: fade 30s ease-out 2s infinite alternate forwards;
+          animation: fade 30s ease-out 2s infinite alternate forwards; 
+          
+          
+  background: url(../assets/images/bg2.png);           
+  overflow: hidden;
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -1;  
+}
+
+.login:after {
+  background: #56584c;
+  overflow: hidden;
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 0;
+}
+/*
+ .login {
+  background-image: linear-gradient(#21c08b, #8f57fd);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 30px;
+  min-height: calc(100vh - 0px);
+} */
+.login__container {
+  background-color: #dbdbd4;
+  border: 2px solid white;
+  border-radius: 40px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  color: #56584c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 600px;
+  padding: 60px 68px 40px;
+  width: 40%;
+  margin: 0 auto;
+  max-width: 350px;
+}
+.login__container--form {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  background-color: #faf9f8;
+  /* border-bottom: 2px solid white; */
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  height: 50px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 0px 20px;
+  border-radius: 25px;
+}
+.button {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+.button {
+  background-color: #56584c;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+}
+
+.login__container--remember-me {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.login__container--form label {
+  font-size: 14px;
+  color: #d75a4a;
+}
+.login__container--remember-me a {
+  color: #d75a4a;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.login__container--social-media > div {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.login__container--social-media > div > img {
+  margin-right: 10px;
+  width: 30px;
+}
+.login__container--register {
+  font-size: 14px;
+}
+.login__container--register a {
+  color: #d75a4a;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.login .logo img {
+  width: 230px;
+  filter: brightness(7);
+  opacity: .7;
+}
+.login .logo {
+  padding: 40px;
+}
+.login .footer {
+  text-align: center;
+}
+.login .footer a {
+  color: #fff;
+  font-weight: 100;
+  font-size: 14px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+
 /* Mobile */
 
 
@@ -657,6 +823,31 @@ footer .logo {
 
   
   @media screen and (max-width: 600px) {
+    .login__container {
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 700px;
+      padding: 60px 68px 40px;
+      width: 300px;
+      margin: 0 auto;
+      max-width: 350px;
+  }
+
+  .button {
+    background-color: #dd7467;
+}
+.login:before {
+  -webkit-animation: fade 10s ease-out 2s infinite alternate forwards;
+  animation: fade 10s ease-out 2s infinite alternate forwards;
+  background: url(../assets/images/bg.png);
+}
+
 
     .producto__container {
       margin-left: 0rem;
