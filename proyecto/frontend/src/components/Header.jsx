@@ -1,5 +1,6 @@
 import React from 'react';
-import '../assets/styles/header.scss';
+import '../assets/styles/components/header.scss';
+import logo from '../assets/static/images/icon-logotipo.svg';
 
 const Header = () => (
   <div>
@@ -9,7 +10,7 @@ const Header = () => (
     <header className='image'>
       <div className='head'>
         <div className='logo'>
-          <img src='https://gemeloportillo.github.io/assets/images/icon-logotipo.svg' alt='' />
+          <img src={logo} alt='' />
         </div>
       </div>
     </header>

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/product.scss';
+import '../assets/styles/components/product.scss';
 
 const Product = ({ children }) => (
   <section className='producto'>

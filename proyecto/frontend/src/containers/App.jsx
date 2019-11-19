@@ -9,7 +9,7 @@ import Categories from '../components/Categories';
 import Product from '../components/Product';
 import ProductItem from '../components/ProductItem';
 import '../assets/styles/app.scss';
-import '../assets/styles/home.scss';
+import '../assets/styles/components/home.scss';
 
 const App = () => (
   <div className='App home'>
@@ -19,7 +19,7 @@ const App = () => (
     <Navbar />
     <main>
       <Breadcrumb />
-      <Categories />
+      <Categories title='Salas' />
       <Product>
         <ProductItem />
         <ProductItem />
@@ -28,7 +28,7 @@ const App = () => (
         <ProductItem />
         <ProductItem />
       </Product>
-      <Categories />
+      <Categories title='Comedores' />
       <Product>
         <ProductItem />
         <ProductItem />
@@ -37,7 +37,7 @@ const App = () => (
         <ProductItem />
         <ProductItem />
       </Product>
-      <Categories />
+      <Categories title='Recámaras' />
       <Product>
         <ProductItem />
         <ProductItem />
