@@ -1,0 +1,48 @@
+
+/********************************* Breadcrumb Styles *********************************/
+
+.breadcrumb ul {
+    margin: 0;
+    padding: 10px 16px;
+    list-style: none;
+  }
+  .breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  .breadcrumb li+li:before {
+    padding: 8px;
+    color: #5c432e;
+    content: ">";
+  }
+  .breadcrumb li a {
+    color: #5c432e;
+    padding: 2px 25px;
+    border-radius: 20px;
+    background: #ebe9db;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .breadcrumb li a:hover {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  h3.categories__title {
+    padding: 0 8%;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #5c432e;
+  }
+  
+  .breadcrumb li:first-child a {
+    background: #58594f;
+    color: #fff;
+    font-weight: 300;
+  }
+  
+
+  

@@ -72,6 +72,61 @@
   content: "\6b";
 }
 
+/************************************ Icons Styles ********************************************/
+
+.icons {
+  position: fixed;
+  z-index: 2;
+  right: 0px;
+  padding: 0 10px;
+  top: 10px;
+}
+
+
+.icons.sticky {
+  top: 8px;
+  position: fixed;
+}
+
+span#icon-cart-count {
+  font-size: 15px;
+  position: relative;
+  left: 3px;
+  top: -19px;
+}
+
+#main-menu .icon-icon-pie {
+  display: inline-block;
+}
+
+.icons div {
+  float: left;
+}
+
+#iconsContainer .icon {
+  font-size: 26px;
+  padding: 0 6px 0 0;
+}
+
+.icons .icon-icon-favorite {
+  color: #d75a4a;
+}
+.icons .icon-icon-truck {
+  color: #b28c71;
+}
+.icons .icon-shopping-cart {
+  color: #d75a4a;
+}
+.icons .icon-icon-user {
+  color: #b5b5b0;
+}
+.icons .dark {
+  color: #655f5b;
+}
+.icons .light {
+  color: #c7c5b5;
+}
+
 
 @media screen and (max-width: 860px) {
 

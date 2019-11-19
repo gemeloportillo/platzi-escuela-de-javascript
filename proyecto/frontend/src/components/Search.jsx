@@ -1,9 +1,7 @@
 import React from 'react';
-import '../assets/styles/SearchContainer.scss';
-import '../assets/styles/general.scss';
-import '../assets/styles/iconos.scss';
+import '../assets/styles/search.scss';
 
-const SearchContainer = () => (
+const Search = () => (
   <div id='searchContainer' className='search-container'>
     <form>
       <div className='icono'><div className='icon icon-magnifier-tool' /></div>
@@ -12,5 +10,5 @@ const SearchContainer = () => (
   </div>
 );
 
-export default SearchContainer;
+export default Search;
 

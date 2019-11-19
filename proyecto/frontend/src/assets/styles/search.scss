@@ -40,3 +40,23 @@
     color: #fff;
     padding-top: 3px;
   }
+
+
+
+  .search-container input[type=text] {
+    border-radius: 0 20px 20px 0px;
+    padding: 8px;
+    font-size: 20px;
+    border: none;
+    width: 50%;
+    font-weight: 700;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.search-container input[type=text]:focus {
+  font-weight: 200;
+}
+
+
+
+
