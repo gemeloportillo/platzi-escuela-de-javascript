@@ -8,8 +8,6 @@ const SearchContainer = () => (
     <form action=''>
       <div className='icono'><div className='icon icon-magnifier-tool' /></div>
       <input type='text' placeholder='Busca tu mueble...' name='search' />
-      <p>Este es un tipo de letra</p>
-      <div data-icon='a' className='icon' />
     </form>
   </div>
 );
