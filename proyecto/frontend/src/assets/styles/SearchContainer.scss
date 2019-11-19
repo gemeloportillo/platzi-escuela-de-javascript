@@ -1,0 +1,42 @@
+/**************************************** SEARCH CONTAINER ******************************************/
+.search-container {
+    position: fixed;
+    padding: 0 10px;
+    top: 3px;
+    z-index: 2;
+    left: 32%;
+    width: 60%;
+  }
+  
+  .home .search-container {
+    top: 10px;
+  }
+  
+  .search-container.sticky {
+    top: 4px;
+    position: fixed;
+  }
+  
+  .search-container .icono {
+    background: #dd7467;
+    padding: 9px 15px 4px 20px;
+    float: left;
+    border: none;
+    border-radius: 20px 0px 0px 20px;
+  }
+  
+  .search-container input[type=text] {
+    border-radius: 0 20px 20px 0px;
+    padding: 8px;
+    font-size: 20px;
+    border: none;
+    width: 50%;
+  }
+  
+  .search-container .icon-magnifier-tool {
+    width: 20px;
+    height: 29px;
+    font-size: 24px;
+    color: #fff;
+    padding-top: 3px;
+  }

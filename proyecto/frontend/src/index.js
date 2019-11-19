@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './components/Home';
+import SearchContainer from './components/SearchContainer';
 
 //render recibo dos parametros el nombre del componente y donde lo recibe
-ReactDOM.render(<Home />, document.getElementById('app'));
+ReactDOM.render(<SearchContainer />, document.getElementById('app'));
