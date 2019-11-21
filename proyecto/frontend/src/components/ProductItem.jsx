@@ -1,12 +1,12 @@
 import React from 'react';
 
-const ProductItem = () => (
+const ProductItem = ({ cover, title, year, contentRating, duration }) => (
   <div className='producto-item'>
-    <img className='producto-item__img' src='https://gemeloportillo.github.io/assets/images/pics/sm/item_image-0.jpg' alt='' />
-    <p className='producto-item__title'>Mauris elementum. Lorem ipsum dolor.</p>
+    <img className='producto-item__img' src={cover} alt={title} />
+    <p className='producto-item__title'>{title}</p>
     <div className='producto-item__subtitle'>
-      <p className='producto-item__subtitle--price'>$3,200</p>
-      <p className='producto-item__subtitle--sale'>$1,000 </p>
+      <p className='producto-item__subtitle--price'>{`${year} ${contentRating}`}</p>
+      <p className='producto-item__subtitle--sale'>{duration}</p>
     </div>
     <div className='producto-item__cart'>
       <div>
