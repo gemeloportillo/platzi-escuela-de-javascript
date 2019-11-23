@@ -1,6 +1,10 @@
 /******************************** GENERAL STYLES *******************************/
 @import './vars.scss';
 
+.App.home ~ footer {
+  display: none;
+}
+
 html, body {
     height: 100%;
     padding: 0;

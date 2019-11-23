@@ -3,7 +3,7 @@ import '../assets/styles/components/header.scss';
 import logo from '../assets/static/images/icon-logotipo.svg';
 
 const Header = () => (
-  <div>
+  <div className='header'>
     <div className='logomini'>
       <div className='icon icon-icon-logo' />
     </div>

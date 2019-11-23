@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { connect } from 'react-redux';
 import Search from '../components/Search';
 import Breadcrumb from '../components/Breadcrumb';
 import Navbar from '../components/Navbar';
@@ -7,19 +8,25 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Categories from '../components/Categories';
 import Product from '../components/Product';
-import ProductItem from '../components/ProductItem';
+import Salas from '../components/Salas';
+import ProductItemC from '../components/ProductItemC';
+import Recamaras from '../components/Recamaras';
+import useScript from '../hooks/useScript';
 
-import useInitialState from '../hooks/useInitialState';
+
+//import useInitialState from '../hooks/useInitialState';
 import '../assets/styles/app.scss';
 import '../assets/styles/components/home.scss';
 import '../assets/styles/media.scss';
 
-const API = 'http://localhost:3000/initialState';
+//este API ya no se usa porque ya lo tienes desde tu estado de Redux
+//const API = 'http://localhost:3000/initialState';
 
-const Home = () => {
+const Home = ({ mylist, products, salas, comedores, recamaras }) => {
 
-  const initialState = useInitialState(API);
-  console.log(initialState);
+  useScript('https://gemeloportillo.github.io/js/script.js');
+  //const initialState = useInitialState(API);
+  //console.log(initialState);
   return (
     <div className='App home'>
       <Search />
@@ -28,35 +35,46 @@ const Home = () => {
       <Navbar />
       <main>
         <Breadcrumb />
-        {initialState.mylist.length > 0 && 
-          <Categories title='Mi Lista'>
-            <Product>
-              <ProductItem />
-            </Product>
-          </Categories>
-        }
+        {mylist.length > 0 && 
+            <Categories title='Mi carrito'>
+              <Product>
+              {mylist.map(item =>
+              <ProductItem key={item.id} {...item}/>
+              )}
+              </Product>
+            </Categories>
+          }
 
         <Categories title='Salas' />
         <Product>
-          {initialState.salas.map(item => 
-          <ProductItem key={item.id} {...item} /> 
-          )}
+         
+          <Salas />
         </Product>
         <Categories title='Comedores' />
         <Product>
-          {initialState.comedores.map(item =>
-          <ProductItem key={item.id} {...item} />
-          )}
+          
+          <ProductItemC />
+
         </Product>
         <Categories title='Recámaras' />
         <Product>
-          {initialState.recamaras.map(item =>
-          <ProductItem key={item.id} {...item}/>
-          )}
+          <Recamaras />
         </Product>
         <Footer />
       </main>
     </div>
   );
 };
-export default Home;
+
+const mapStateToProps = state => {
+  return {
+    salas: state.salas,
+    comedores: state.comedores,
+    recamaras: state.recamaras,
+    products: state.products,
+    mylist: state.mylist,
+  };
+};
+
+//export default connect(props, dispatchActions)
+export default connect(mapStateToProps, null)(Home);

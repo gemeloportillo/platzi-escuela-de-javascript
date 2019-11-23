@@ -89,6 +89,7 @@
   }
   .producto-item__subtitle {
     opacity: 1;
+    margin-top: 15px;
   }
   .producto-item:hover .producto-item__subtitle {
     opacity: 0;
@@ -99,7 +100,7 @@
 }
   .producto-item .icon-shopping-cart {
     opacity: 1;
-    margin-top: -110px;
+    margin-top: -136px;
     margin-left: 164px;
     color: #d75a4a;
   }
@@ -126,8 +127,8 @@
   
   
   button.producto-item__cart--btn {
-    margin-left: -68px;
-    margin-top: 42px;
+    margin-left: -57px;
+    margin-top: 9px;
     padding: 3px 10px;
     border: none;
     border-radius: 20px;

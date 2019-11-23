@@ -3,13 +3,16 @@ import '../assets/styles/components/login.scss';
 import logotipoIcon from '../assets/static/images/icon-logotipo.svg';
 import twitterIcon from '../assets/static/images/twitter-icon.png';
 import googleIcon from '../assets/static/images/google-icon.png';
+import { Link } from 'react-router-dom';
 
 const Login = () => (
   <section className='login'>
     <section className='header'>
+      <Link to='/'>
       <div className='logo'>
         <img src={logotipoIcon} />
       </div>
+      </Link>
     </section>
     <section className='login__container'>
       <h2>Inicia sesión</h2>
@@ -36,14 +39,14 @@ const Login = () => (
         </div>
       </section>
       <p className='login__container--register'>
-        No tienes ninguna cuenta 
-        <a href='/'>Regístrate</a>
+        No tienes ninguna cuenta
+        <Link to='/signup'>Regístrate</Link>
       </p>
     </section>
     <section className='footer'>
-      <a href='/'>Terminos de uso</a>
-      <a href='/'>Declaración de privacidad</a>
-      <a href='/'>Centro de ayuda</a>
+      <Link to='/ups'>Terminos de uso</Link>
+      <Link to='/'>Declaración de privacidad</Link>
+      <Link to='/'>Centro de ayuda</Link>
     </section>
   </section>
 

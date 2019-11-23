@@ -5,6 +5,11 @@
     filter: brightness(7);
     opacity: .7;
   }
+
+  .signup ~ footer {
+    display: none;
+  }
+  
   
 body {
     background-repeat:no-repeat;

@@ -1,12 +1,17 @@
 
 /*********************************** LOGIN STYLES  **************************************/
 
-
 .login .logo img {
     width: 230px;
     filter: brightness(7);
     opacity: .7;
   }
+
+  .login ~ footer {
+    display: none;
+  }
+  
+  
   
  body {
     background-repeat:no-repeat;

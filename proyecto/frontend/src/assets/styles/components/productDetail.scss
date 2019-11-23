@@ -1,0 +1,101 @@
+/*********************************** PRODUCTO SYTLE  ***********************************/
+
+.product_page .breadcrumb {
+    margin-top: -18px;
+}
+.product_page main section {
+    background: #fff;
+}
+.product_page h1.producto__titulo {
+    color: #5c432e;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 3rem;
+  }
+  
+  .product_page p.producto__precio {
+    font-size: 36px;
+    line-height: 4rem;
+    color: #d75a4a;
+    font-weight: 700;
+    margin: 20px 0;
+  }
+  
+  .product_page .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "foto caracteristicas"
+        "descripcion descripcion";
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 20px;
+    margin-top: 0;
+    padding: 1% 5%;
+    align-items: flex-start;
+    justify-items: center;
+  }
+  
+  .product_page .foto { 
+    grid-area: foto; 
+    text-align: center;
+  }
+  
+  .product_page .foto img {
+    width: 100%;
+    max-width: 620px;
+  }
+  
+  .product_page .descripcion {
+    grid-area: descripcion;
+    max-width: 1500px;
+  }
+  
+  .product_page .descripcion { grid-area: descripcion; }
+  
+  .product_page .caracteristicas { grid-area: caracteristicas; }
+  
+  .product_page .search-container {
+    top: 3px;
+  }
+  /* .product_page main {
+    top: 70px;
+    background: none;
+  } */
+  
+  .caracteristicas button {
+    margin-left: -50px;
+    margin-top: 125px;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 20px;
+    background: #d75a4a;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    width: 85%;
+  }
+  
+  .caracteristicas .addcart {
+    text-align: center;
+  }
+  .caracteristicas button {
+    transition: 250ms all;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+    margin-left: 0;
+    margin-top: 35px;
+    padding: 16px 10px;
+    border: none;
+    border-radius: 20px;
+    background: #d75a4a;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    width: 65%;
+  }
+  
+  .caracteristicas button:hover {
+    font-size: 24px;
+  }
+  
+  
